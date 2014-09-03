@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>120913BE-7A34-4EA4-A8A1-BDCE5F034458</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>48FA1057-4D68-48B5-BB44-CBC28130A414</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>3EEC7A2D-486C-4756-A271-FAD9448441C8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>120913BE-7A34-4EA4-A8A1-BDCE5F034458</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Vinz Greger</string>
+	<key>description</key>
+	<string>Removes special Characters</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Remove Special Chars</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>3EEC7A2D-486C-4756-A271-FAD9448441C8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>48FA1057-4D68-48B5-BB44-CBC28130A414</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>62</integer>
+				<key>keyword</key>
+				<string>special</string>
+				<key>script</key>
+				<string>pbpaste | python removespecial.py "{query}"</string>
+				<key>subtext</key>
+				<string>Removing Special Chars</string>
+				<key>title</key>
+				<string>Removing Special Chars</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>120913BE-7A34-4EA4-A8A1-BDCE5F034458</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>I based the idea and concept on "Change Case" from Jay Gillibrand. So thanks for the foundation... Credits go to him.</string>
+	<key>uidata</key>
+	<dict>
+		<key>120913BE-7A34-4EA4-A8A1-BDCE5F034458</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>3EEC7A2D-486C-4756-A271-FAD9448441C8</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>48FA1057-4D68-48B5-BB44-CBC28130A414</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
